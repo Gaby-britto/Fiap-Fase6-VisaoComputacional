@@ -9,15 +9,15 @@ Reconhecimento de dois objetos (**teclado** e **garrafa**) com três abordagens 
 | Nome | RM | Responsável por |
 |---|---|---|
 | Gabriele Brito Rocha Menezes | rm574145 | Entrega 1: YOLO customizada |
-| Gilenisson Lucas Bezerra dos Santos| rm573716 | Entrega 2: comparação de modelos |
+| Gilenisson Lucas Bezerra dos Santos | rm573716 | Entrega 2: comparação de modelos |
 
 ## Links
 
 | Item | Link |
 |---|---|
-| Notebook da Entrega 1 | [abrir](COLE_AQUI_O_LINK_DO_NOTEBOOK_1) |
-| Notebook da Entrega 2 | [abrir](COLE_AQUI_O_LINK_DO_NOTEBOOK_2) |
-| Vídeo de demonstração (YouTube, não listado) | [assistir](COLE_AQUI_O_LINK_DO_VIDEO) |
+| Notebook da Entrega 1 | [abrir](GabrieleBritoRochaMenezes_rm574145_pbl_fase6.ipynb) |
+| Notebook da Entrega 2 | LINK A SER ADICIONADO PELA PESSOA 2 |
+| Vídeo de demonstração (YouTube, não listado) | LINK A SER ADICIONADO |
 
 Todo o passo a passo, o código executado e as análises completas estão nos notebooks. Este README apresenta o projeto e orienta a leitura.
 
@@ -42,14 +42,14 @@ Treinamos o modelo **YOLOv8n** (Ultralytics), partindo dos pesos pré-treinados,
 
 ### Resultado resumido (validação, 8 imagens)
 
-| Métrica | 30 épocas | 60 épocas |
+| Métrica (`best.pt`) | 30 épocas | 60 épocas |
 |---|---|---|
-| mAP50, melhor época (`best.pt`) | 0,758 | 0,970 |
-| mAP50, última época | 0,812 | 0,809 |
-| Recall, melhor época | 0,750 | 0,946 |
-| Recall, última época | 0,749 | 0,864 |
+| mAP50 | 0,995 | 0,912 |
+| Recall | 0,981 | 0,750 |
+| Precisão | 0,910 | 0,969 |
+| Tempo de treino | 1,2 min | 1,6 min |
 
-Os dois treinos terminaram praticamente empatados em mAP50. No treino de 60 épocas, a loss de validação parou de cair e voltou a subir enquanto a de treino seguiu caindo, o que indica início de overfitting. A validação tem poucas imagens, então as métricas oscilam bastante. A análise completa, os prints das detecções nas imagens de teste e as limitações estão no notebook.
+Mais épocas não trouxeram ganho claro: na validação, 30 épocas foram melhores, e no teste o modelo de 60 épocas acertou uma imagem a mais (7 de 8 contra 6 de 8), porém com caixas extras. O treino de 60 épocas mostrou sinal leve de overfitting. Como a validação tem poucas imagens, as métricas oscilam bastante. A análise completa, os prints das detecções nas imagens de teste e as limitações estão no notebook.
 
 ---
 
@@ -66,8 +66,8 @@ Os dois treinos terminaram praticamente empatados em mAP50. No treino de 60 épo
 ```
 .
 ├── README.md
-├── NOME_rmXXXXX_pbl_fase6.ipynb      # Entrega 1
-├── NOME2_rmXXXXX_pbl_fase6.ipynb     # Entrega 2
+├── GabrieleBritoRochaMenezes_rm574145_pbl_fase6.ipynb   # Entrega 1
+├── (notebook da Entrega 2)
 ├── dataset/
 │   ├── data.yaml
 │   ├── images/   (train, val, test)
