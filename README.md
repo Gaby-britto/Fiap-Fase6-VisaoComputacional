@@ -63,8 +63,7 @@ Também foi avaliado o YOLOv5 tradicional, utilizando pesos pré-treinados. Nos 
 
 A YOLO personalizada desenvolvida na Entrega 1 foi treinada com imagens e anotações específicas para as classes de garrafas e teclados. Seus resultados devem ser analisados em conjunto com as métricas registradas no notebook correspondente.
 
-Conclusão: os experimentos permitem comparar abordagens distintas de visão computacional. A CNN apresentou bom desempenho de classificação no pequeno conjunto de teste utilizado, enquanto o YOLOv5 tradicional apresentou limitações na detecção das classes esperadas. A comparação deve considerar que os modelos possuem objetivos diferentes: a CNN classifica a imagem, enquanto os modelos YOLO localizam e identificam objetos. O tamanho reduzido do conjunto de teste limita a generalização dessas conclusões
-
+**Conclusão:** os experimentos permitem comparar abordagens distintas de visão computacional. A CNN apresentou bom desempenho de classificação no pequeno conjunto de teste utilizado, enquanto o YOLOv5 tradicional apresentou limitações na detecção das classes esperadas. A comparação deve considerar que os modelos possuem objetivos diferentes: a CNN classifica a imagem, enquanto os modelos YOLO localizam e identificam objetos. O tamanho reduzido do conjunto de teste limita a generalização dessas conclusões.
 
 ---
 
