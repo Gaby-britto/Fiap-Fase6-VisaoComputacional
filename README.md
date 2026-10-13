@@ -17,7 +17,7 @@ Reconhecimento de dois objetos (**teclado** e **garrafa**) com três abordagens 
 |---|---|
 | Notebook da Entrega 1 | [abrir](GabrieleBritoRochaMenezes_rm574145_pbl_fase6.ipynb) |
 | Notebook da Entrega 2 | [abrir](https://github.com/Gaby-britto/Fiap-Fase6-VisaoComputacional/blob/main/GilenissonLucasBezerraDosSantos_RM573716_pbl_fase6%20.ipynb) | |
-| Vídeo de demonstração (YouTube, não listado) | LINK A SER ADICIONADO |
+| Vídeo de demonstração (YouTube, não listado) | [Assistir ao vídeo](https://youtu.be/HKGKGQKU7U0) |
 
 Todo o passo a passo, o código executado e as análises completas estão nos notebooks. Este README apresenta o projeto e orienta a leitura.
 
