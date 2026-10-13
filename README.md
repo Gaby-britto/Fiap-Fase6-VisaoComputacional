@@ -16,7 +16,7 @@ Reconhecimento de dois objetos (**teclado** e **garrafa**) com três abordagens 
 | Item | Link |
 |---|---|
 | Notebook da Entrega 1 | [abrir](GabrieleBritoRochaMenezes_rm574145_pbl_fase6.ipynb) |
-| Notebook da Entrega 2 | LINK A SER ADICIONADO PELA PESSOA 2 |
+| Notebook da Entrega 2 | [abrir](https://github.com/Gaby-britto/Fiap-Fase6-VisaoComputacional/blob/main/GilenissonLucasBezerzaDosSantos_RM573716_pbl_fase6%20.ipynb) | |
 | Vídeo de demonstração (YouTube, não listado) | LINK A SER ADICIONADO |
 
 Todo o passo a passo, o código executado e as análises completas estão nos notebooks. Este README apresenta o projeto e orienta a leitura.
@@ -53,12 +53,17 @@ Mais épocas não trouxeram ganho claro: na validação, 30 épocas foram melhor
 
 ---
 
-## Entrega 2: comparação de modelos
+## Entrega 2: Comparação entre CNN, YOLOv5 tradicional e YOLO personalizada
 
 *Responsável: Gilenisson Lucas Bezerra dos Santos*
 
-> Seção a ser preenchida pela Pessoa 2: abordagens comparadas (YOLO customizada, YOLO tradicional e CNN do zero), critérios (facilidade de uso, precisão, tempo de treino e tempo de inferência) e resumo da conclusão.
+Nesta etapa, foi desenvolvida uma CNN (*Convolutional Neural Network*) treinada do zero para classificar imagens de garrafas e teclados. O modelo foi avaliado utilizando um conjunto de teste com 8 imagens e obteve **87,5% de acurácia**, classificando corretamente 7 das 8 imagens.
 
+Também foi avaliado o YOLOv5 tradicional, utilizando pesos pré-treinados. Nos testes realizados com as mesmas categorias de objetos, a classe esperada foi detectada em 2 das 8 imagens. O tempo médio de inferência observado foi de aproximadamente **1,0159 segundo por imagem**.
+
+A YOLO personalizada desenvolvida na Entrega 1 foi treinada com imagens e anotações específicas para as classes de garrafas e teclados. Seus resultados devem ser analisados em conjunto com as métricas registradas no notebook correspondente.
+
+**Conclusão:** os experimentos permitem comparar abordagens distintas de visão computacional. A CNN apresentou bom desempenho de classificação no pequeno conjunto de teste utilizado, enquanto o YOLOv5 tradicional apresentou limitações na detecção das classes esperadas. A comparação deve considerar que os modelos possuem objetivos diferentes: a CNN classifica a imagem, enquanto os modelos YOLO localizam e identificam objetos. O tamanho reduzido do conjunto de teste limita a generalização dessas conclusões.
 ---
 
 ## Estrutura do repositório
